@@ -17,15 +17,15 @@
     <div class=" mt-2">
         <div id="divBotones" class="col text-center">
             <button id="nuevo" class="btn btn-primary">Nuevo Juego</button>
-            <button id="pedir" class="btn btn-success">Pedir Carta</button>
-            <button id="detener" class="btn btn-danger">Detener</button>
+            <button id="pedir" disabled="disabled" class="btn btn-success">Pedir Carta</button>
+            <button id="detener" disabled="disabled" class="btn btn-danger">Detener</button>
         </div>
     </div>
 
     <div class="row container">
         <div class="col">
             <h1>Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/10S.png" alt="">
                 <img class="carta" src="assets/cartas/10D.png" alt="">
                 <img class="carta" src="assets/cartas/10D.png" alt="">
@@ -37,7 +37,7 @@
     <div class="row container mt-3">
         <div class="col">
             <h1>Computadora - <small>0</small></h1>
-            <div id="computadora-cartas">
+            <div id="computadora-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="">
                 <img class="carta" src="assets/cartas/10C.png" alt="">
                 <img class="carta" src="assets/cartas/10C.png" alt="">
@@ -47,6 +47,9 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js"></script>
     <script src="assets/js/juego.js"></script>
+    <script>
+        modulo.nuevoJuego();
+    </script>
 
 </body>
 
